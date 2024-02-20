@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*
+
+em HTML é id = em CSS é # (Somente para 1 elemento)
+em HTML é class = em CSS é . (Para 2 ou + elementos)
+
+OBS: É possível colocar duas classes diferentes numa mesma tag ex: <h1 class="basico avancado"> ou uma classe e uma id ex: <h1 id="principal" class="avancado">
+*/
+
+body {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(32, 65, 54);
+}
+
+#principal {
+    text-align: center;
+    background-color: gray;
+    font-weight: bolder; /* font-weight = para deixar a cor em negrito ou + escura */
+}
+
+h2 {
+    color: rgb(63, 124, 104);
+}
+
+.basico {
+    color: blue
+}
+
+.intermediario {
+    color:lime
+}
+
+.avancado {
+    color: brown;
+}

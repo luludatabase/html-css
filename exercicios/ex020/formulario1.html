@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form autocomplete="off" method="post" action="cadastro.php">
+            <!--Métodos de envio: (method)
+            GET e POST
+            
+            quando usar o método GET:
+                Os dados a serem enviados não sejam sensíveis, como endereços, números de
+                documentos, senhas, etc.
+                Tivermos formulários simples e que possam ser compartilhados facilmente através
+                de uma URL. Por exemplo, o Google usa GET no seu formulário, pois você pode
+                enviar um link para qualquer pessoa, já com a ação da busca embutida, como em
+                http://google.com.br/search?q=Gustavo+Guanabara
+                Os dados a serem enviados nunca ultrapassem 3000 bytes.
+                Não contenha envio de arquivos como imagens (i.e. fotos de perfil), arquivos PDF,
+                etc.
+            quando usar o método POST:
+                Não queremos que os dados apareçam explicitamente na URL do navegador.
+                Capturamos dados como senhas, documentos e outro tipo de dado sensível.
+                Precisamos enviar muitos dados (acima de 3000 bytes ~ sem limites).
+                Precisamos enviar imagens ou outros tipos de arquivos.
+            -->
+        <p>
+                <label for="inome">Nome:</label>
+                <!-- label é importante para fazer uma relação entre o meu formulário e a etiqueta correta dele. 
+                name e id basicamente fazem a mesma funcionalidade porém cada uma serve melhor para uma linguagem de programação. -->
+            <input type="text" name="nome" id="inome">
+        </p>
+
+        <p>
+            <label for="isobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+            <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>

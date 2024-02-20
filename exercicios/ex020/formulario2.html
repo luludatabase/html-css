@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"> <!--autocomplete on/off = liga/desliga a sugestão para completar as caixar na qual ja digitamos-->
+    <p>
+        <label for="iusu">Usuário:</label>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" autocomplete="username"> <!--Required = campo obrigatorio / min e maxlength = min e max de caratcteres.
+        O autocomplete dentro de um input serve de complemento ao autocomplete do form. Nos casos acima e abaixo ele mostrará a sugestão de username já anteriormente digitado e também mostrará abaixo a sugestão de senha atual. Caso fosse de criar senha seria autocomplete="new-password"-->
+    </p>
+    <p>
+        <label for="isenha">Senha:</label>
+        <input type="password" name="senha" id="isenha" required minlength="8" size="20" placeholder="Mínimo de 8 letras" autocomplete="current-password"> <!-- size = Tamanho da caixa para escrevermos a senha / placeholder = uma dica na caixa-->
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar"> <!--Reset = botão para limpar os campos-->
+    </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        /* Anatomia da caixa 
+            1. padding
+            2. border 
+            3. outline 
+            4. margin
+        */
+
+        h1 { /* box-level = Ocupa a largura inteira do site e inicia no próximo parágrafo  */
+
+            height: 100px;
+            width: 300px;
+
+            background-color: lightgray;
+
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(104, 93, 93);
+            */
+
+            border: 10px solid yellow;
+
+            /*
+            padding-top: 10px; TOP = CIMA
+            padding-right: 10px; RIGHT = DIREITA
+            padding-bottom: 10px; BOTTOM = BAIXO
+            padding-left: 10px; LEFT = ESQUERDA
+            */
+
+            padding: 10px;
+            
+            /*
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            */
+
+            margin: 20px 20px 40px 20px; /* OU 20px auto 40px auto para centralizar */
+            /* caso queira somente certralizar basta usar margin: auto; */
+
+            /*
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: blue;
+            */
+
+            outline: 5px dashed blue;
+
+        }
+
+        a {   /* inline-level = continua logo apos o parágrafo sem pular linhas */
+
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: brown;
+            */
+
+            border: 10px solid brown;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como isso funciona. </p>
+</body>
+</html>

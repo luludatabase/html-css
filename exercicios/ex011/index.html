@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+        <picture>
+            <source media="(max-width: 750px )" srcset="IMAGENS/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px )" srcset="IMAGENS/foto-m.png" type="image/png">
+            <img src="IMAGENS/foto-g.png" alt="imagem flexível">
+        </picture>
+        <!--Precisa estar em ordem do MENOR PARA O MAIOR ou o MAIOR PARA O MENOR-->
+
+    <h1>Reproduzindo áudio</h1>
+        <p>Reproduzindo áudio em HTML5</p>
+        <p>
+            <strong>
+                <ul>
+                    <li>Dark Souls 3 - Lothric and Lorian OST</li>
+                </ul>
+            </strong>
+        </p>
+        <audio src="MIDIAS/Dark Souls 3 OST - Lorian, Elder Prince & Lothric, Younger Prince [HQ]_GfibV38dgpA.mp3" controls loop></audio>
+
+        <h2>Outra forma de reproduzir áudio</h2>
+        <p>
+            <strong>
+                <ul>
+                    <li>Dark Souls 3 Theme</li>
+                </ul>
+            </strong>
+        </p>
+            <audio controls loop>
+                <source src="MIDIAS/Dark Souls 3 OST - Main Menu Theme [High Quality]_cSz-HvgY1AI.mp3" type="audio/mpeg">
+            </audio>
+
+    <h1>Vídeos com HTML5</h1>
+        <h2>Inserindo vídeos hospedados localmente</h2>
+            <p>Este vídeo está hospedado no meu próprio servidor.</p>
+            <video src="VIDEOS/rain.mp4" width="700" poster="IMAGENS/summer-rain.jpg" controls></video>
+
+            <h3>Outra forma de adicionar vídeo</h3>
+            <video controls width="700" height="500">
+                <source src="VIDEOS/urban.mp4" type="video/mp4">
+            </video>
+        <h2>Inserindo vídeos do Youtube</h2>
+        <iframe width="700" height="500" src="https://www.youtube.com/embed/G7EPO9Rtyqw?si=djAx6mcr4Mnf_WR-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        
+        <!-- Métodos de Adicionar imagens, áudio e videos
+        <video src="" controls></video>
+        <video controls width="" height="" poster="">
+            <source src="" type="video/mp4">
+        </video>
+        ou, compartilhar videos do youtube usando o método de compartilhamento
+
+        <audio src="" controls></audio>
+        <audio controls>
+            <source src="" type="audio/mp3">
+        </audio>
+        
+        <picture>
+            <source media="(min-width: )" srcset="" type="image/">
+            <img src="" alt="">
+        </picture>-->       
+</html>

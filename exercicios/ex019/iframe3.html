@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        h1 {
+            text-decoration: underline;
+        }
+
+        iframe {
+            border-radius: 20px;
+            border: 1px solid black;
+            width: 95vw;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <h2>Uso de links com iframe</h2>
+    <!--Para que isso funcione precisamos criar um name para o iframe e referenciá-lo no target do link-->
+    <ul>
+        <li><a href="paginas-extras/pag1.html" target="paginas">1° Página</a></li>
+        <li><a href="paginas-extras/pag2.html" target="paginas">2° Página</a></li>
+        <li><a href="paginas-extras/pag3.html" target="paginas">3° Página</a></li>
+    </ul>
+
+    <iframe src="" frameborder="0" name="paginas"></iframe>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <iframe src="paginas-extras/pag4.html" frameborder="1" width="300px" height="200px"
+    sandbox="sandbox" referrerpolicy="no-referrer">
+
+    <!--O atributo sandbox traz segurança a sites que tenham o iframe ativado. O mesmo faz com que o site dentro do iframe perca alguma funcionalidades. Dentre elas:
+
+        Não pode mais enviar dados de formulários
+        Não pode mais executar scripts
+        Desabilita todo tipo de API, janelas modais e popups
+        Desabilita todo tipo de plugin com <embed>, <object>, <applet>
+        Evita que o site dentro do iframe assuma a navegação top level do navegador
+        Bloqueia recursos como autoplay e foco automático em elementos de formulário
+    
+    Para isso, bastamos atribuir o sandbox="sandbox"(padrão) dentro do iframe. Caso queira liberar algumas funcionalidades, usamos dentro do sandbox os valores a seguir: 
+
+        allow-forms
+        allow-scripts
+        allow-modals
+        allow-popups
+        allow-same-origin
+        allow-top-navigation
+
+    ex: sandbox ="allow-same-origin allow-forms allow-scripts" e etc. Podem todos ficar numa mesma linha.
+
+    E ainda temos o "referrerpolicy" que retira todos os dados de compartilhamento de um usuário ou seja não monitoram nossos rastros de navegação. Temos:
+
+        no-referer-when-downgrade (padrão)
+        origin
+        origin-when-cross-origin
+        same-origin
+        strict-origin
+        strict-origin-when-cross-origin
+        unsafe-url
+-->
+    
+    seu navegador não é compatível com isso
+    </iframe>
+</body>
+</html>

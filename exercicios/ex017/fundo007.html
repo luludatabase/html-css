@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento de Caixas</title>
+    <style>
+        #container {
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+            background-image: url(imagens/target001.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+        }
+
+        #conteudo {
+            height: 200px;
+            width: 400px;
+            background-color: rgba(255, 255, 0, 0.425);
+            background-image: url(imagens/target001.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+
+            left: 50%; /* é possível também que seja usado no let e top pixels. EX: 50px; */
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+
+            /* PASSOS PARA QUE A IMAGEM/BACKGROUND FIQUE CENTRALIZADA: 
+                1. Necessário que a imagem de fundo tenha o "position: relative" e a imagem para centralizar seja "position: absolute"
+
+                2. left e top sejam 50% ambos
+
+                3. transforma: translate (-50%, -50%)
+
+             */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

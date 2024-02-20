@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: white url(imagens/darksouls1.jpg) right center no-repeat fixed;
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    height: 20vh;
+    background: black url(imagens/darksouls.logo.png) center center no-repeat;
+    background-size: contain;
+}
+
+main {
+    background-color: rgba(169, 169, 169, 0.479);
+    margin: 0px auto 0px auto;
+    width: 70vw;
+    height: 400vh;
+    font-family: 'Sriracha', cursive;
+}
+
+section {
+    color: white;
+    width: 70vw;
+    height: 80vh;
+    position: relative;
+}
+
+section.igual > p {
+    background-color: rgba(255, 255, 255, 0.637);
+    color: black;
+    font-weight: 500;
+    font-size: 2.1vh;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+
+}
+
+section.diferente > p {
+    background-color: rgba(0, 0, 0, 0.651);
+    font-size: 2.1vh;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+
+}
+
+section#img01 {
+    background: rgba(0, 139, 139, 0.096) url(imagens/peakpx.jpg) center center no-repeat fixed;
+    background-size: cover;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 2px;
+}
+
+section#img02 {
+    background: rgba(0, 139, 139, 0.116) url(imagens/gwyn-nito-izalith.jpg) center no-repeat fixed;
+    background-size: cover;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 2px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 3px;
+    font-size: 1.3em;
+}
+
+footer > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+footer > a:hover {
+    text-decoration: underline;
+    background-color: white;
+    color: black;;
+}
+

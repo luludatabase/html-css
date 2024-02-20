@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        caption {
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            width: 100px;
+        }
+
+        col.nome {
+            background-color: darkgray;
+            color: white;
+        }
+
+        col.sexo {
+            background-color: yellow;
+            color: black;
+        }
+        col.profissao {
+            background-color: rgba(255, 0, 0, 0.479);
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Agrupando Colunas com Colgroup</h1>
+
+    <table>
+        <!-- COLGROUP = agrupa de forma que a coluna inteira possa receber uma cor
+                OBS: a cada coluna deverá haver um "col" que representa aquela determinada coluna
+                OBS: o "span" faz com que a cor que selecionamos para uma determinada coluna, também vá para a(as) próxima(s) desde que determinemos a quantidade de colunas, EX: span="2". 
+
+
+        -->
+        <colgroup>
+            <col class="nome" >
+            <col class="sexo" span="2">
+            <col class="profissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>         
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Vendedor</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>39</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Otáio</td>
+                <td>M</td>
+                <td>22</td>
+                <td>Nutricionista</td>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
